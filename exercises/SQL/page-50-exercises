@@ -1,59 +1,72 @@
 1. Products
 
-2.SELECT ProductID, ProductName, UnitPrice
+2.
+SELECT ProductID, ProductName, UnitPrice
 FROM Products
 
-3. SELECT ProductID, ProductName, UnitPrice
+3.
+SELECT ProductID, ProductName, UnitPrice
 FROM Products
 ORDER BY UnitPrice
 
-4. SELECT ProductID, ProductName, UnitPrice
+4.
+SELECT ProductID, ProductName, UnitPrice
 FROM Products
 WHERE UnitPrice <= 7.5
 
-5. SELECT ProductID, ProductName, UnitsInStock, UnitPrice
+5.
+SELECT ProductID, ProductName, UnitsInStock, UnitPrice
 FROM Products
 WHERE UnitsInStock >= 100
 ORDER BY UnitPrice DESC
 
-6. SELECT ProductID, ProductName, UnitsInStock, UnitPrice
+6.
+SELECT ProductID, ProductName, UnitsInStock, UnitPrice
 FROM Products
 WHERE UnitsInStock >= 100
 ORDER BY UnitPrice DESC, ProductName
 
-7. SELECT ProductID, ProductName, UnitsInStock, UnitPrice, UnitsOnOrder
+7.
+SELECT ProductID, ProductName, UnitsInStock, UnitPrice, UnitsOnOrder
 FROM Products
 WHERE UnitsInStock = 0 AND UnitsOnOrder >= 1
 ORDER BY ProductName
 
 8. Categories
 
-9. SELECT *
+9.
+SELECT *
 FROM Categories
 Seafood Category = 8
 
-10. CategoryID, 
+10.CategoryID, 
 SELECT ProductName, CategoryID, UnitPrice
 FROM Products
 WHERE CategoryID = 8
 
-11. SELECT FirstName, LastName
+11.
+SELECT FirstName, LastName
 FROM Employees;
 
-12. SELECT FirstName, LastName, Title
+12.
+SELECT FirstName, LastName, Title
 FROM Employees
 WHERE Title LIKE '%manager%';
 
-13. SELECT DISTINCT Title
+13.
+SELECT DISTINCT Title
 FROM Employees;
 
-14. SELECT FirstName, LastName, Title, Salary
+14.
+SELECT FirstName, LastName, Title, Salary
 FROM Employees
 WHERE Salary BETWEEN 2000 AND 2500
 
-15. SELECT *
+15.
+SELECT *
 FROM Suppliers
 
-16. SELECT *
+16.
+SELECT *
 FROM Products
 WHERE SupplierID = 4
